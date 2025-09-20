@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "npm i --include=dev && dfx generate backend",
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@dfinity/agent": "2.2.0",
+    "@dfinity/auth-client": "0.15.0",
+    "@dfinity/identity": "0.15.0",
+    "@psychedelic/plug-connect": "0.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.4.3",
+    "qrcode.react": "3.1.0"
+  },
+  "devDependencies": {
+    "vite": "5.4.11",
+    "vite-plugin-environment": "1.1.3"
+  }
+}
